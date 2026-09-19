@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101c32" />
+    <title>تراز — مدیریت مالی هوشمند</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="منوی اصلی">
+        <a href="#" class="brand" aria-label="تراز">
+          <span class="brand-mark"><i></i><i></i><i></i></span>
+          <span>تراز</span>
+        </a>
+        <div class="workspace-switcher">
+          <span class="workspace-icon">آ</span>
+          <span><b>آتریا استودیو</b><small>فضای کاری اصلی</small></span>
+          <span class="chevron">⌄</span>
+        </div>
+        <nav>
+          <p class="nav-label">منوی اصلی</p>
+          <a class="nav-item active" href="#dashboard"><span class="nav-icon">⌑</span>داشبورد</a>
+          <a class="nav-item" href="#invoices"><span class="nav-icon">▤</span>فاکتورها <em>۳</em></a>
+          <a class="nav-item" href="#transactions"><span class="nav-icon">↕</span>تراکنش‌ها</a>
+          <a class="nav-item" href="#customers"><span class="nav-icon">♧</span>مخاطبان</a>
+          <p class="nav-label second">مدیریت</p>
+          <a class="nav-item" href="#reports"><span class="nav-icon">◔</span>گزارش‌ها</a>
+          <a class="nav-item" href="#wallets"><span class="nav-icon">▣</span>حساب‌ها و کیف پول</a>
+          <a class="nav-item" href="#settings"><span class="nav-icon">⚙</span>تنظیمات</a>
+        </nav>
+        <div class="support-card">
+          <div class="spark">✦</div>
+          <b>همیشه یک قدم جلوتر</b>
+          <p>با گزارش‌های هوشمند، نبض کسب‌وکارتان را در دست بگیرید.</p>
+          <a href="#reports">مشاهده گزارش‌ها <span>←</span></a>
+        </div>
+        <div class="profile">
+          <div class="avatar">ن م</div>
+          <span><b>نیما محمدی</b><small>مدیر مجموعه</small></span>
+          <button aria-label="بیشتر">•••</button>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <button class="menu-button" aria-label="باز کردن منو">☰</button>
+          <div class="breadcrumb"><span>فضای کاری</span><i>/</i><b>داشبورد</b></div>
+          <div class="top-actions">
+            <button class="icon-button" aria-label="جستجو">⌕</button>
+            <button class="notification" aria-label="اعلان‌ها">♧<i></i></button>
+            <span class="header-line"></span>
+            <span class="today">شنبه، ۲۹ شهریور ۱۴۰۵</span>
+          </div>
+        </header>
+
+        <section class="hero" id="dashboard">
+          <div>
+            <p class="eyebrow">نمای کلی مالی</p>
+            <h1>صبح‌ بخیر، نیما <span>✦</span></h1>
+            <p class="hero-copy">امروز همه‌چیز تحت کنترل است. نگاهی به جریان مالی کسب‌وکارتان بیندازید.</p>
+          </div>
+          <button class="primary-button" id="newTransaction"><span>＋</span> ثبت تراکنش جدید</button>
+        </section>
+
+        <section class="summary-grid" aria-label="خلاصه مالی">
+          <article class="balance-card">
+            <div class="card-title"><span>موجودی کل</span><button aria-label="نمایش موجودی">◉</button></div>
+            <strong>۲۴۸٬۵۰۰٬۰۰۰ <small>تومان</small></strong>
+            <p class="up">↗ <b>۱۲٫۵٪</b> نسبت به ماه گذشته</p>
+            <div class="card-orbit orbit-one"></div><div class="card-orbit orbit-two"></div>
+            <div class="balance-visual"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </article>
+          <article class="metric-card income">
+            <div class="metric-head"><span class="metric-icon">↙</span><button>•••</button></div>
+            <p>دریافتی این ماه</p>
+            <strong>۸۷٬۶۵۰٬۰۰۰ <small>تومان</small></strong>
+            <div class="metric-foot"><span class="up">↗ ۸٫۲٪</span><small>نسبت به ماه قبل</small></div>
+          </article>
+          <article class="metric-card expense">
+            <div class="metric-head"><span class="metric-icon">↗</span><button>•••</button></div>
+            <p>پرداختی این ماه</p>
+            <strong>۴۲٬۳۰۰٬۰۰۰ <small>تومان</small></strong>
+            <div class="metric-foot"><span class="down">↘ ۴٫۶٪</span><small>نسبت به ماه قبل</small></div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="panel cashflow-panel">
+            <div class="panel-head"><div><h2>جریان نقدی</h2><p>مرور درآمد و هزینه در ۶ ماه اخیر</p></div><button class="period">۶ ماه اخیر <span>⌄</span></button></div>
+            <div class="legend"><span><i class="income-dot"></i>دریافتی</span><span><i class="expense-dot"></i>پرداختی</span></div>
+            <div class="chart-wrap">
+              <div class="y-axis"><span>۱۲۰M</span><span>۹۰M</span><span>۶۰M</span><span>۳۰M</span><span>۰</span></div>
+              <div class="chart"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 650 220" preserveAspectRatio="none" aria-label="نمودار جریان نقدی"><defs><linearGradient id="fillIncome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5d73ef" stop-opacity=".22"/><stop offset="1" stop-color="#5d73ef" stop-opacity="0"/></linearGradient></defs><path d="M0 139 C38 128 52 152 90 125 S143 80 178 100 S237 142 271 112 S320 66 361 88 S413 132 451 83 S514 35 548 58 S604 104 650 42 L650 220 L0 220Z" fill="url(#fillIncome)"/><path class="income-line" d="M0 139 C38 128 52 152 90 125 S143 80 178 100 S237 142 271 112 S320 66 361 88 S413 132 451 83 S514 35 548 58 S604 104 650 42"/><path class="expense-line" d="M0 166 C35 160 53 178 90 153 S139 137 178 151 S232 174 271 159 S321 130 361 145 S413 164 451 137 S511 104 548 126 S604 142 650 100"/><circle cx="548" cy="58" r="5" class="chart-point"/></svg><div class="months"><span>فروردین</span><span>اردیبهشت</span><span>خرداد</span><span>تیر</span><span>مرداد</span><span>شهریور</span></div></div>
+            </div>
+          </article>
+          <article class="panel invoice-panel" id="invoices">
+            <div class="panel-head"><div><h2>فاکتورهای اخیر</h2><p>آخرین وضعیت فاکتورهای شما</p></div><a href="#all-invoices">مشاهده همه <span>←</span></a></div>
+            <div class="invoice-list">
+              <div class="invoice-row"><div class="client-logo violet">ر</div><div class="invoice-name"><b>رایمند استودیو</b><small>فاکتور #۱۰۴۸ · امروز</small></div><strong>۱۲٬۸۰۰٬۰۰۰ <small>تومان</small></strong><span class="status paid">پرداخت شد</span></div>
+              <div class="invoice-row"><div class="client-logo coral">ک</div><div class="invoice-name"><b>کافه رادیو</b><small>فاکتور #۱۰۴۷ · دیروز</small></div><strong>۸٬۲۰۰٬۰۰۰ <small>تومان</small></strong><span class="status pending">در انتظار</span></div>
+              <div class="invoice-row"><div class="client-logo teal">پ</div><div class="invoice-name"><b>پلتفرم نوین</b><small>فاکتور #۱۰۴۶ · ۲ روز پیش</small></div><strong>۲۴٬۵۰۰٬۰۰۰ <small>تومان</small></strong><span class="status paid">پرداخت شد</span></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="panel transactions-panel" id="transactions">
+            <div class="panel-head"><div><h2>تراکنش‌های اخیر</h2><p>آخرین جابه‌جایی‌های مالی</p></div><a href="#all-transactions">مشاهده همه <span>←</span></a></div>
+            <div class="transaction-row"><span class="transaction-icon purple">⌘</span><div><b>پرداخت حقوق تیم</b><small>امروز، ۱۰:۴۵ · بانک سامان</small></div><strong class="negative">−۱۸٬۵۰۰٬۰۰۰ <small>تومان</small></strong></div>
+            <div class="transaction-row"><span class="transaction-icon green">↓</span><div><b>واریز از رایمند استودیو</b><small>امروز، ۰۹:۲۰ · درگاه پرداخت</small></div><strong class="positive">+۱۲٬۸۰۰٬۰۰۰ <small>تومان</small></strong></div>
+          </article>
+          <article class="panel goal-panel">
+            <div class="panel-head"><div><h2>هدف این ماه</h2><p>پیشرفت درآمد شهریور</p></div><button aria-label="بیشتر">•••</button></div>
+            <div class="goal-content"><div class="progress-ring"><span><b>۷۲٪</b><small>تکمیل</small></span></div><div><b>۸۷٫۶M <small>از ۱۲۰M تومان</small></b><p>۳۲٫۴ میلیون تومان تا هدف باقی مانده است.</p></div></div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div class="toast" role="status">تراکنش جدید آماده ثبت است.</div>
+    <script src="script.js"></script>
+  </body>
+</html>
